@@ -1,0 +1,32 @@
+package com.company.访问修饰符.修饰成员.basePackage;
+
+/*
+* 访问权限的意义：降低类和类之间的耦合性，将希望被访问的内容开放出来，将不希望被访问的内容隐藏起来，在定义类时有意义
+* 访问权限：指不同包下，不同类下，能否访问被修饰类的成员
+* 访问：通过“对象.成员”的方式访问，包括“super.成员”和“this.成员”
+* 成员:包括变量和方法，这里只验证了成员变量的访问，访问成员方法同理
+* 取决于：被访问类和当前类的位置关系或父子关系
+* */
+public class Base {
+    public String publicField = "public";
+    protected String protectedField = "protected";
+    String defaultField = "default";
+    private String privateField = "private";
+    {
+        //当前类下，可以访问所有成员，包括private成员（this可以省略）
+        String publicField1 = this.publicField;
+        String protectedField1 = this.protectedField;
+        String defaultField1 = this.defaultField;
+        String privateField1 = this.privateField;
+    }
+
+    class Inner{
+        public void method(){
+            //内部类下，可以访问所有成员，包括private成员（this可以省略）
+            String publicField = Base.this.publicField;
+            String protectedField = Base.this.protectedField;
+            String defaultField = Base.this.defaultField;
+            String privateField = Base.this.privateField;
+        }
+    }
+}
