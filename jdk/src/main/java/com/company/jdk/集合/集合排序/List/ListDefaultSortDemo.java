@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 /*
-* List的自然排序方式：通过Collections.sort(List)，List的元素类型需要实现Compareble接口，并重写compareTo方法
+* List的自然排序方式：要求元素可排序
+* 元素类型实现Compareble接口，重写compareTo()方法
+* Collections.sort(list)
+* 排序规则由compareTo()方法的具体实现决定：return this.age - o.age;age增序排序
 * */
 public class ListDefaultSortDemo {
     public static void main(String [] args){
