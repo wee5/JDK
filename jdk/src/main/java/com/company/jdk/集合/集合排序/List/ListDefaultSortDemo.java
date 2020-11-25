@@ -5,9 +5,9 @@ import java.util.Collections;
 import java.util.List;
 /*
 * List的自然排序方式：要求元素可排序
-* 元素类型实现Compareble接口，重写compareTo()方法
+* 元素类型实现Compareble接口，重写compareTo(Object o)方法
 * Collections.sort(list)
-* 排序规则由compareTo()方法的具体实现决定：return this.age - o.age;age增序排序
+* 排序规则由compareTo(Object o)方法的具体实现决定：return this.age - o.age;age增序排序
 * */
 public class ListDefaultSortDemo {
     public static void main(String [] args){
