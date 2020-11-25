@@ -5,7 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /*
-* List的自定义排序方式：通过内部类的形式，创建Comparator比较器，并重写compare方法（自定义排序方式）
+* List的自定义排序方式：
+* 内部类的形式创建Comparator比较器，并重写compare(Object o1, Object o2)方法
+* Collections.sort(list,comparator);
+* 排序规则由compare(Object o1, Object o2)决定
 *
 * 两种方式的排序原理相同：通过比较两个对象的属性给对象排序，返回值都是int类型，决定对象的顺序（大小）
 *   属性比较：基本类型可以直接减法运算；复杂类型需要重写compareTo()方法，用该方法比较属性顺序
