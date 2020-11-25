@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 /*
-* List的自然排序方式：通过Collections.sort(List)，List需要实现Compareble接口，并重写compareTo方法
+* List的自然排序方式：通过Collections.sort(List)，List的元素类型需要实现Compareble接口，并重写compareTo方法
 * */
 public class ListDefaultSortDemo {
     public static void main(String [] args){
