@@ -4,9 +4,14 @@ public class Demo {
     public static void main(String[] args) {
 
         /*
-        * StringBuffer和StringBuilder相比String，都是长度可变的字符串对象；String指向常量池
-        * String和StringBuffer是线程安全的，String被final修饰，是不可变的，StringBuffer的大部分方法都有synchronized修饰；
-        * StringBuilder是线程不安全的
+        * 长度可变
+        *   StringBuffer和StringBuilder都是长度可变的字符串对象
+        *   String指向常量池，被final修饰，长度不可变
+        *
+        * 线程安全
+        *   String和StringBuffer是线程安全的，String被final修饰，是不可变的，StringBuffer的大部分方法都有synchronized修饰；
+        *   StringBuilder是线程不安全的
+        *
         * */
         String weezy = "weezy";
         StringBuffer riri = new StringBuffer("riri");
