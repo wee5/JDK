@@ -18,6 +18,8 @@ package com.company.jdk.集合.集合框架;
 *   TreeSet：可以实现排序功能
 *
 * Map：键值对
+* 
+*   HashMap:
 *
 *   LinkedHashMap:
 *
