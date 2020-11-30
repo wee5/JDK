@@ -19,17 +19,20 @@ package com.company.jdk.集合.集合框架;
 *
 * Map：键值对
 * 
-*   HashMap:
+*   HashMap：允许key/value为null，但是key只能有一个null；非线程安全；元素无序
 *
-*   LinkedHashMap:
+*   LinkedHashMap：
 *
-*   TreeMap:
+*   TreeMap：
 *
-*   ConcurrentHashMap:
+*   ConcurrentHashMap：
 *
 * 为什么ArrayList（按下标）查找比LinkedList快？
 *   ArrayList按下标查找的时间复杂度时O(1)：由首地址+偏移量直接获得
 *   LinkedList查找的时间复杂度时O(n)：由Node.next执行n次获得（实际会更快，因为当n>size/2时，会从后往前查询）
+*
+* 为什么HashMap是元素无序的？
+*   HashMap用数组存储，但存储位置不是
 *
 * */
 public class Demo {
